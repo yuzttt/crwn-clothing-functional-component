@@ -3,18 +3,18 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import { UserProvider } from "./context/user.context";
-import { ProductProvider } from "./context/product.context";
+import { CategoriesProvider } from "./context/categories.context";
 import { BrowserRouter } from "react-router-dom";
 import { CartProvider } from './context/cart.context.jsx';
 
 ReactDOM.render(
   <BrowserRouter>
     <UserProvider>
-      <ProductProvider>
+      <CategoriesProvider>
         <CartProvider>
           <App />
         </CartProvider>
-      </ProductProvider>
+      </CategoriesProvider>
     </UserProvider>
   </BrowserRouter>,
   document.getElementById("root")
