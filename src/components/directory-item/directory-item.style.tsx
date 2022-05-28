@@ -3,7 +3,7 @@ import styled from "styled-components";
 type BackgrounfImageProps={
   imageUrl:string;
 }
-export const BackgroundImage = styled.div<BackgrounfImageProps>`
+export const BackgroundImage = styled.div<BackgrounfImageProps >`
   width: 100%;
   height: 100%;
   background-size: cover;
